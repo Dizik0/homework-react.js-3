@@ -1,0 +1,32 @@
+body {
+  padding: 20px;
+
+  background: rgb(238, 174, 202);
+  background: radial-gradient(
+    circle,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(243, 164, 245, 1) 100%
+  );
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.box {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+}
+p,
+ul,
+li,
+h1,
+h2 {
+  margin: 0;
+  list-style-type: none;
+  padding: 0;
+}
+
+.title {
+  color: rgba(255, 255, 255, 0.6);
+}

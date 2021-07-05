@@ -1,0 +1,37 @@
+.list {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  margin-right: -20px;
+}
+
+.listItem {
+  display: flex;
+  width: 315px;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding-right: 8px;
+}
+
+.button {
+  display: block;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.6);
+  border: none;
+  padding: 8px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.name {
+  padding-top: 5px;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.number {
+  padding-top: 5px;
+  text-align: center;
+  margin-right: 20px;
+}
