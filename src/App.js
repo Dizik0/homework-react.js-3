@@ -1,7 +1,7 @@
 import "./App.css";
 import { Component } from "react";
 import { v4 as uuidv4 } from "uuid";
-import { AddContact } from "./Components/AddContact";
+import { AddContact } from "./Components/AddContact/AddContact";
 import { Filter } from "./Components/Filter";
 import { ContactList } from "./Components/ContactList";
 import style from "./App.module.scss";
@@ -23,7 +23,9 @@ class App extends Component {
   }
 
   componentDidMount() {
-    this.setState({ contacts: JSON.parse(localStorage.getItem("key-1")) });
+    if (JSON.parse(localStorage.getItem("key-1"))) {
+      this.setState({ contacts: JSON.parse(localStorage.getItem("key-1")) });
+    }
   }
 
   stateTransfer = ({ name, number }) => {
