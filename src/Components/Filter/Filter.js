@@ -7,12 +7,13 @@ export class Filter extends Component {
   };
 
   render() {
+    const { filterContact, filter } = this.props;
     return (
       <input
         className={style.lable}
         type="text"
-        onChange={this.props.filterContact}
-        value={this.props.filter}
+        onChange={filterContact}
+        value={filter}
       />
     );
   }

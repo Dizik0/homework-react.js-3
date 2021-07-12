@@ -51,10 +51,9 @@ class App extends Component {
 
   render() {
     const { filter, contacts } = this.state;
-    const normalizedFilter = filter;
 
     const filterTodos = contacts.filter(({ name }) =>
-      name.toLowerCase().includes(normalizedFilter)
+      name.toLowerCase().includes(filter)
     );
     return (
       <div className={style.box}>
